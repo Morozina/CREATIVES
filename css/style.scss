@@ -1,0 +1,402 @@
+header{
+    background: url(../img/bg.jpg)no-repeat top center/cover;
+    height: 100vh;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@mixin font($fs,$fw,$fc){
+    font-size: $fs;
+    font-weight: $fw;
+    color: $fc;
+}
+
+.dr{
+    border-bottom:2px solid #777777;
+    position: absolute;
+    width: 100%;
+    margin-top:-14px;
+    padding:0;
+}
+
+.logo{
+    @include font(30px,700,#fff);
+    background: #11749E;
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    box-shadow: #fff;
+    box-shadow: 12px 8px 0px rgba(255, 255, 255, 0.7);
+}
+nav{
+    margin-top:40px;
+    ul{
+        li{
+            display: block;
+            margin:0 50px 0 0;
+            padding: 0;
+            @include font(20px,400,#fff);
+            padding-bottom:45px;
+            a{
+                text-emphasis: none;
+                color: #fff;
+                &:hover{
+                    color:#fff;
+                    text-decoration: none;
+                    padding-bottom:45px;
+                    border-bottom:4px solid #11749E;
+                    
+                }
+            }
+        }
+    }
+}
+
+.icons{
+    margin-top:40px;
+    margin-left: 60px;
+    li{
+        display: block;
+        margin:0;
+        padding:0;
+        margin-right: 25px;
+        a{
+            @include font(20px,400 ,#fff );
+        }
+    }
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top:270px;
+    h1{
+        @include font(152px,700 ,#fff );
+    }
+    h2{
+        @include font(25px,500 ,#156D92 );
+        letter-spacing: 18px;
+        
+    }
+}
+
+.scrollDown{
+
+    margin-top:120px;
+    @include font(12px,400 ,#fff );
+    div{
+        width: 60px;
+        height: 60px;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding-left:15px;
+        padding-top:0px;
+        @include font(40px,400 ,#fff );
+        a{
+            color: #fff;
+        }
+    }
+}
+
+.pages{
+    background-color: #11749E;
+    h1{
+       @include font(250px,700 ,#3C8DAF ); 
+       position: absolute;
+       user-select: none;
+    }
+    h2{
+        @include font(37px,500 ,#fff );
+        text-transform: uppercase;
+        margin-top: 150px;
+    }
+    .pages__item{
+        margin-top: 140px;
+        padding-bottom: 130px;
+    }
+    .pages__icon{
+        width: 135px;
+        height: 135px;
+        border-radius: 50%;
+        text-align: center;        
+        padding-top: 25px;
+        @include font(50px,700 ,#fff );
+        background: #2E85AA;
+        
+    }
+    .pages__title{
+        @include font(18px,500 ,#fff );
+        text-align: center;
+        margin-top: 15px;
+    }
+    .pages__text{
+        @include font(15px,400 ,#fff );
+        text-align: center;
+        margin-top: 20px;
+        
+
+
+    }
+    
+}
+
+.features{
+    .features__bg__1{
+        
+       .features__bg__ser{
+        background:#222222 url(../img/n1.jpg)no-repeat top right/50%;
+        height:475px ;
+        width:100%;
+        padding: 110px 0;
+        .features__title{
+            @include font(25px,500 ,#fff );
+            text-transform: uppercase;
+        }
+        .features__text{
+            @include font(14px,400 ,#fff );
+            margin-top: 45px;
+        }
+        }
+    }
+    .features__bg__2{
+        text-align: right;
+        .features__bg__sert{
+         background:#F3F3F3 url(../img/n2.jpg)no-repeat top left/50%;
+         height:475px ;
+         width:100%;
+         padding: 110px 0;
+         .features__content{
+             float: right;
+             text-align: left;
+         }
+
+         .features__title{
+             @include font(25px,500 ,#000 );
+             text-transform: uppercase;
+         }
+         .features__text{
+             @include font(14px,400 ,#000 );
+             margin-top: 45px;
+             width: 470px;           
+         }
+         }
+     }
+    
+}
+
+.extensions{
+    background-color: #fff;
+    h1{
+       @include font(250px,700 ,#D7D7D7 ); 
+       position: absolute;
+       user-select: none;
+    }
+    h2{
+        @include font(37px,500 ,#000 );
+        text-transform: uppercase;
+        margin-top: 150px;
+    }
+    .extensions__header{
+        margin-top: 125px;
+    }
+    .extensions__item{
+        margin-top: 140px;
+        padding-bottom: 130px;
+    }
+    .extensions__title{
+        @include font(18px,500 ,#227EA5 );
+        text-align: center;
+        margin-top: 15px;
+    }
+    .extensions__text{
+        @include font(15px,400 ,#000 );
+        text-align: center;
+        margin-top: 20px;
+        
+
+
+    }
+    
+}
+
+.tutorials{
+    background: #11749E;
+    .row{
+        padding-top: 60px;
+        padding-bottom:60px;
+    }
+    i{
+        @include font(70px,700 ,#fff );
+    }
+    p{
+        @include font(15px,400 ,#fff );
+        margin-left: 30px;
+    }
+}
+
+.ip{
+    background: url('../img/bg2.jpg')no-repeat top center/cover;
+    h1{
+        @include font(25px,500 ,#fff );
+        text-transform: uppercase;
+    }
+    p{
+        margin-top: 30px;
+        @include font(15px,400 ,#fff );
+    }
+    .ip__content{
+        margin-top: 200px;
+    }
+    ul{
+        margin:0px;
+        padding: 0;
+        margin-top:70px;
+        margin-bottom: 270px;
+        li{
+            display: block;
+            @include font(15px,500 ,#fff );
+            background: #11749E;
+            margin-bottom: 20px;
+            padding: 5px 15px;
+            text-transform: uppercase;
+            &:nth-child(1){
+                width: 370px;
+            }
+            &:nth-child(2){
+                width: 400px;
+            }
+            &:nth-child(3){
+                width: 430px;
+            }
+        }
+    }
+}
+
+.team{
+    background-color: #fff;
+    h1{
+       @include font(250px,700 ,#D7D7D7 ); 
+       position: absolute;
+       user-select: none;
+       text-align: center;
+    }
+    h2{
+        @include font(37px,500 ,#000 );
+        text-transform: uppercase;
+        margin-top: 150px;
+        text-align: center;
+    }
+    .team__header{
+        margin-top: 125px;
+    }
+    .team__item{
+        margin-top: 140px;
+        padding-bottom: 130px;
+    }
+    .team__title{
+        margin-top:-50px;
+        background: #fff; 
+        position: absolute;
+        margin-left:10%;
+        width:215px;
+        h3{
+            @include font(18px,500 ,#227EA5 );
+            text-align: center;
+            margin-top: 15px;
+            text-transform: uppercase;      
+            
+        }
+        
+    }
+    .team__img{
+        width: 270px;
+        height: 414px;
+        position: relative;
+    }
+    .team__text{
+        @include font(15px,500 ,#000 );
+        text-align: center;
+        margin-top: 5px;
+        
+
+
+    }
+    
+}
+
+.contact{
+    background:url(../img/footer.jpg)no-repeat top center/cover;
+    h1{
+       font-size: 250px;
+       font-weight: 700;
+       color:rgba(255,255,255,0.2);
+       position: absolute;
+       user-select: none;
+       text-align: center;
+       
+    }
+    h2{
+        @include font(37px,500 ,#fff );
+        text-transform: uppercase;
+        margin-top: 150px;
+        text-align: center;
+    }
+    form{
+        margin-top:150px;
+        width: 100%;
+        .form__name{
+            width:100%;
+            @include font(15px,400 ,#fff );
+            color: #fff;
+            padding: 5px 15px;
+            background: rgba(255,255,255,0);
+        }
+        .form__text{
+            width:100%;
+            margin-top: 40px;
+            height: 150px;
+            @include font(15px,400 ,#fff );
+            color: #fff;
+            padding: 5px 15px;
+            background: rgba(255,255,255,0);
+        }
+        input::-webkit-input-placeholder{
+            color:#fff;
+        }
+        input:-moz-placeholder {
+             color: #fff;
+        }
+        textarea::-webkit-input-placeholder{
+            color:#fff;
+        }
+        textarea:-moz-placeholder {
+             color: #fff;
+        }
+        button{
+            width: 225px;
+            height: 60px;
+            background: #11749E;
+            border: none;
+            @include font(25px,500 ,#fff );
+            text-transform: uppercase;
+            margin-top: 45px;
+            transition: all 1s ease;
+            cursor: pointer;
+            margin-bottom: 100px;
+            &:hover{
+                color: #fff;
+                background: rgb(19, 143, 196);
+            }
+        }
+    }
+}
+
+footer{
+    iframe{
+        width:100%;
+        height: 500px;
+    }
+}
